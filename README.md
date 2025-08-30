@@ -1,12 +1,75 @@
-# React + Vite
+# SwyftUp - Fintech Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, dynamic landing page for SwyftUp, the first fintech company in the Philippines to issue cards connected to Apple Wallet and Google Wallet.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern Design**: Clean, minimalist fintech aesthetic
+- **Responsive**: Works perfectly on desktop, tablet, and mobile
+- **Interactive**: Smooth animations and hover effects
+- **Professional**: Trust-focused design with security badges
+- **Performance**: Built with React and Vite for fast loading
 
-## Expanding the ESLint configuration
+## 🏗️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React 19
+- **Build Tool**: Vite 
+- **Styling**: Tailwind CSS v4
+- **Icons**: Heroicons (SVG)
+- **Deployment Ready**: Optimized production build
+
+## 📱 Sections
+
+1. **Hero Section**: Bold statement about revolutionizing Filipino payments
+2. **Features**: Benefits for digital nomads and businesses
+3. **How it Works**: 3-step process for individuals and businesses
+4. **About Us**: Company mission, vision, and values
+5. **Testimonials**: User reviews and success stories
+6. **Footer**: Complete navigation, social links, and legal pages
+
+## 🛠️ Development
+
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+```bash
+npm install
+```
+
+### Development Server
+```bash
+npm run dev
+```
+Visit `http://localhost:5173` to view the site.
+
+### Production Build
+```bash
+npm run build
+```
+
+### Preview Production Build
+```bash
+npm run preview
+```
+
+## 🎨 Design Highlights
+
+- **Color Palette**: Professional blue and purple gradients
+- **Typography**: System fonts for optimal performance
+- **Security Focus**: BSP regulation badges and trust indicators
+- **Global Appeal**: Emphasis on international payment capabilities
+- **Philippine Market**: Tailored messaging for Filipino users
+
+## 📊 Key Messaging
+
+- First company in Philippines with Apple/Google Wallet integration
+- Serving both digital nomads and businesses
+- Bank-grade security and BSP regulation
+- Global payment capabilities
+- Streamlined payroll solutions
+
+---
+
+Built with ❤️ for the Filipino fintech community
