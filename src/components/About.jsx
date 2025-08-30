@@ -2,15 +2,15 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section id="about" className="py-12 sm:py-16 lg:py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 items-center">
           {/* Content */}
-          <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <div className="text-center lg:text-left">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               About <span className="text-gradient">SwyftUp</span>
             </h2>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed px-2 lg:px-0">
               We're on a mission to transform the financial landscape in the Philippines by providing 
               innovative, secure, and accessible digital payment solutions.
             </p>
@@ -53,18 +53,18 @@ const About = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-8 mb-8">
+            <div className="grid grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">50K+</div>
-                <div className="text-gray-600">Active Users</div>
+                <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2">50K+</div>
+                <div className="text-gray-600 text-sm sm:text-base">Active Users</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">₱2B+</div>
-                <div className="text-gray-600">Processed</div>
+                <div className="text-2xl sm:text-3xl font-bold text-purple-600 mb-2">₱2B+</div>
+                <div className="text-gray-600 text-sm sm:text-base">Processed</div>
               </div>
             </div>
 
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+            <button className="w-full sm:w-auto bg-blue-600 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors min-h-[48px]">
               Learn More About Us
             </button>
           </div>

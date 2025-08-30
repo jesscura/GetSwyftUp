@@ -35,39 +35,39 @@ const Features = () => {
   ]
 
   return (
-    <section id="features" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+    <section id="features" className="py-12 sm:py-16 lg:py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             Why Choose <span className="text-gradient">SwyftUp</span>?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-2">
             Whether you're a digital nomad or running a business, SwyftUp provides the financial tools you need to succeed in the modern economy.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-start">
           {features.map((feature, index) => (
-            <div key={index} className="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
-              <div className="flex items-center space-x-4 mb-6">
-                <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center shadow-md">
+            <div key={index} className="bg-gray-50 rounded-2xl p-6 sm:p-8 hover:shadow-lg transition-shadow">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-6">
+                <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
                   {feature.icon}
                 </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
+                <div className="text-center sm:text-left">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900">{feature.title}</h3>
+                  <p className="text-gray-600 text-sm sm:text-base">{feature.description}</p>
                 </div>
               </div>
               
               <ul className="space-y-3">
                 {feature.benefits.map((benefit, benefitIndex) => (
-                  <li key={benefitIndex} className="flex items-center space-x-3">
-                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <li key={benefitIndex} className="flex items-start space-x-3">
+                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-gray-700">{benefit}</span>
+                    <span className="text-gray-700 text-sm sm:text-base leading-relaxed">{benefit}</span>
                   </li>
                 ))}
               </ul>
@@ -76,15 +76,15 @@ const Features = () => {
         </div>
 
         {/* Additional Feature Highlights */}
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mt-16 sm:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           <div className="text-center">
             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">Secure & Trusted</h3>
-            <p className="text-gray-600">Bank-level security with 256-bit encryption and fraud protection.</p>
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Secure & Trusted</h3>
+            <p className="text-gray-600 text-sm sm:text-base px-2">Bank-level security with 256-bit encryption and fraud protection.</p>
           </div>
           
           <div className="text-center">
@@ -93,18 +93,18 @@ const Features = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">Lightning Fast</h3>
-            <p className="text-gray-600">Process transactions in seconds, not days. Real-time payment notifications.</p>
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Lightning Fast</h3>
+            <p className="text-gray-600 text-sm sm:text-base px-2">Process transactions in seconds, not days. Real-time payment notifications.</p>
           </div>
           
-          <div className="text-center">
+          <div className="text-center sm:col-span-2 lg:col-span-1">
             <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h4" />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">Smart Integration</h3>
-            <p className="text-gray-600">First in the Philippines to connect with Apple and Google Wallet seamlessly.</p>
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Smart Integration</h3>
+            <p className="text-gray-600 text-sm sm:text-base px-2">First in the Philippines to connect with Apple and Google Wallet seamlessly.</p>
           </div>
         </div>
       </div>
